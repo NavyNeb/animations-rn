@@ -5,6 +5,8 @@ import StoryList from '~/components/screens/StoryList';
 import Galaxy from '~/components/screens/Galaxy';
 import Posters from '~/components/screens/Posters';
 import AnimeStories from '~/components/screens/AnimeStories';
+import ShoesCards from '~/components/screens/Shoes';
+import Shores from '~/components/screens/Shores';
 
 export default function Details() {
   const { name } = useLocalSearchParams();
@@ -19,6 +21,10 @@ export default function Details() {
         return <Posters />;
         case 'animeStories':
           return <AnimeStories />;
+        case 'shoes':
+          return <ShoesCards />
+        case "shores":
+          return <Shores />
       default:
         <Text>No animation type defined</Text>;
     }

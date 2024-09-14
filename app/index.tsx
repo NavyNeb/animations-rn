@@ -15,6 +15,8 @@ export default function Home() {
        <AnimsCard title={"Animated planet Card"} desc={"Animated planetry solar system"} handleNavigate={()=> router.push(`/galaxy`)} />
        <AnimsCard title={"Animated posters Card"} desc={"Songs Posters Animations"} handleNavigate={()=> router.push(`/posters`)} />
        <AnimsCard title={"Anime Stories Card"} desc={"Anime Stories Animations"} handleNavigate={()=> router.push(`/animeStories`)} />
+       <AnimsCard title={"Shoes Card"} desc={"Animated scrolling shoes"} handleNavigate={()=> router.push(`/shoes`)} />
+       <AnimsCard title={"Shores Card"} desc={"Animated scrolling shores"} handleNavigate={()=> router.push(`/shores`)} />
       </Container>
     </>
   );
