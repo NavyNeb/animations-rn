@@ -7,6 +7,8 @@ import Posters from '~/components/screens/Posters';
 import AnimeStories from '~/components/screens/AnimeStories';
 import ShoesCards from '~/components/screens/Shoes';
 import Shores from '~/components/screens/Shores';
+import SongPlayer from '~/components/screens/SongPlayer';
+import SearchCards from '~/components/screens/SearchCards';
 
 export default function Details() {
   const { name } = useLocalSearchParams();
@@ -25,6 +27,10 @@ export default function Details() {
           return <ShoesCards />
         case "shores":
           return <Shores />
+        case "songPlayer": 
+          return <SongPlayer />
+        case "searchCards":
+          return <SearchCards />
       default:
         <Text>No animation type defined</Text>;
     }

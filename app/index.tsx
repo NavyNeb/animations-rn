@@ -17,6 +17,8 @@ export default function Home() {
        <AnimsCard title={"Anime Stories Card"} desc={"Anime Stories Animations"} handleNavigate={()=> router.push(`/animeStories`)} />
        <AnimsCard title={"Shoes Card"} desc={"Animated scrolling shoes"} handleNavigate={()=> router.push(`/shoes`)} />
        <AnimsCard title={"Shores Card"} desc={"Animated scrolling shores"} handleNavigate={()=> router.push(`/shores`)} />
+       <AnimsCard title={"Song Player Elements"} desc={"Animated song player list"} handleNavigate={()=> router.push(`/songPlayer`)} />
+       <AnimsCard title={"Search Cards"} desc={"Animated Search Cards List"} handleNavigate={()=> router.push(`/searchCards`)} />
       </Container>
     </>
   );

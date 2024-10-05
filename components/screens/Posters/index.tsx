@@ -1,8 +1,6 @@
 import {
   Dimensions,
-  Platform,
   SafeAreaView,
-  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -13,12 +11,11 @@ import { isAndroid } from '~/helpers';
 import Header from './components/Header';
 import { PostersData } from '~/data';
 import PostersCard, { POSTER_WIDTH } from './components/Posters';
-import Animated, { FadeIn, FadeInDown, FadeInLeft, FadeInRight, FadeInUp, SlideInDown, useAnimatedRef, useScrollViewOffset } from 'react-native-reanimated';
+import Animated, { FadeIn, FadeInDown, FadeInLeft, FadeInRight, FadeInUp, useAnimatedRef, useScrollViewOffset } from 'react-native-reanimated';
 
 export const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
 const Posters = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0)
   const [fullscreen, setToggleFullscreen] = useState<boolean>(false)
   const { top } = useSafeAreaInsets();
   const animatedRef = useAnimatedRef<Animated.ScrollView>();

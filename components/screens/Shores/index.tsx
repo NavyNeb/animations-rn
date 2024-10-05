@@ -1,20 +1,16 @@
 import {
   Dimensions,
-  Platform,
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
 import React, { useCallback, useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { isAndroid } from '~/helpers';
 import { ShoresList } from '~/data';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import ShoresItem, { POSTER_WIDTH } from './components/ShoresItem';
-import Animated, { FadeIn, FadeInDown, FadeInLeft, FadeInRight, FadeInUp, SlideInDown, useAnimatedRef, useScrollViewOffset } from 'react-native-reanimated';
+import Animated, { useAnimatedRef, useScrollViewOffset } from 'react-native-reanimated';
 import Header from './components/Header';
 import PagingDots from './components/pagDots';
 
@@ -34,9 +30,7 @@ const Shores = () => {
     [scrollOffset.value],
   )
   
-
   const handlePosterItemClick = ()=> {
-
     setToggleFullscreen(!fullscreen);
   }
 
